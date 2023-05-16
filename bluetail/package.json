@@ -2,10 +2,7 @@
   "name": "bluetail",
   "version": "0.1.0",
   "description": "Bluetail events web",
-  "main": "server.js",
   "private": true,
-  "author":"Gavin Blue",
-  "license":"MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -17,23 +14,14 @@
     "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
     "react-toastify": "^9.1.3",
-    "web-vitals": "^2.1.4",
-      "bcryptjs": "^2.4.3",
-      "colors": "^1.4.0",
-      "dotenv": "^15.0.0",
-      "express": "^4.17.2",
-      "express-async-handler": "^1.2.0",
-      "jsonwebtoken": "^8.5.1",
-      "mongoose": "^6.1.9"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node backend/server.js",
-    "server": "nodemon backend/server.js",
-    "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  
   "eslintConfig": {
     "extends": [
       "react-app",

@@ -4,7 +4,11 @@
   "description": "Bluetail events company",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix bluetail",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "repository": {
     "type": "git",
@@ -23,5 +27,14 @@
   "bugs": {
     "url": "https://github.com/bluetailevents/Bluetail/issues"
   },
-  "homepage": "https://github.com/bluetailevents/Bluetail#readme"
+  "homepage": "https://github.com/bluetailevents/Bluetail#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^15.0.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.11.1"
+  }
 }
