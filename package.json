@@ -1,0 +1,27 @@
+{
+  "name": "bluetail",
+  "version": "1.0.0",
+  "description": "Bluetail events company",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluetailevents/Bluetail.git"
+  },
+  "keywords": [
+    "mern",
+    "redux",
+    "react",
+    "react-router-dom",
+    "axios",
+    "toastify"
+  ],
+  "author": "gavin blue",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bluetailevents/Bluetail/issues"
+  },
+  "homepage": "https://github.com/bluetailevents/Bluetail#readme"
+}
